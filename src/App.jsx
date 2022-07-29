@@ -49,9 +49,7 @@ const Section = ({children, title}) => {
 };
 
 const App = () => {
-  return(
-    <Pay />
-  )
+  
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -61,7 +59,7 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <StackNavigator />
+      <Pay />
     </SafeAreaView>
   );
 };
